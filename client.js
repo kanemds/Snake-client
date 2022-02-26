@@ -9,14 +9,14 @@ const connect = function() {
   conn.setEncoding("utf8");
   
   conn.on("connect", () => {
-    console.log(`logged in`);
+    console.log("Name:MVP");
+    console.log("Successfully connected to game server");
   });
 
   return conn;
 };
 
-console.log("Connecting ...");
-connect();
+
 
 module.exports = {
   connect,
